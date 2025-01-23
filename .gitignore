@@ -1,0 +1,17 @@
+# skip bin dirs
+**/bin
+**/testbin
+
+# skip .out files (coverage tests)
+*.out
+
+# skip testdata go.sum, since it may have
+# different result depending on go version
+/testdata/**/go.sum
+/docs/book/src/simple-external-plugin-tutorial/testdata/sampleexternalplugin/v1/bin
+/testdata/**legacy**
+
+.idea/
+.vscode/
+WORKSPACE
+.DS_Store

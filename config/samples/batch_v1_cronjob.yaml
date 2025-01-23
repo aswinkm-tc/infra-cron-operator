@@ -1,0 +1,9 @@
+apiVersion: batch.truecaller.com/v1
+kind: CronJob
+metadata:
+  labels:
+    app.kubernetes.io/name: cron-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: cronjob-sample
+spec:
+  # TODO(user): Add fields here

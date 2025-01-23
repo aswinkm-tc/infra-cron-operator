@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: cron-operator
 repo: github.com/aswinkm-tc/infra-cron-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: truecaller.com
+  group: batch
+  kind: CronJob
+  path: github.com/aswinkm-tc/infra-cron-operator/api/v1
+  version: v1
 version: "3"
